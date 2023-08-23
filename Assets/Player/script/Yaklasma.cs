@@ -23,6 +23,7 @@ public class Yaklasma : MonoBehaviour
     public GameObject image;
     public GameObject Yatak;
     public GameObject yeniGorev;
+    public GameObject kapi;
     float noodleSayaci = 0;
     float uyusayaci = 1;
     float uykusayaci = 1;
@@ -37,6 +38,11 @@ public class Yaklasma : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float mesafeKapi = Vector3.Distance(player.transform.position, kapi.transform.position);
+        if (mesafeKapi <= 10 && Input.GetKeyDown(KeyCode.Y))
+        {
+            SceneManager.LoadScene(0);
+        }
         float distance1 = Vector3.Distance(player.transform.position, noodle1.transform.position);
         if (distance1 <= 7 && Input.GetKeyDown(KeyCode.E))
         {
@@ -96,7 +102,7 @@ public class Yaklasma : MonoBehaviour
 
         }
 
-        if(noodleSayaci == 1 && uyusayaci == 1)
+        if(noodleSayaci == 7 && uyusayaci == 1)
         {
             YeTusu.SetActive(false);
             UyuTusu1.SetActive(true);
@@ -125,15 +131,14 @@ public class Yaklasma : MonoBehaviour
         {
             print("Buton1");
             Uyku.SetActive(false);
-            yeniGorev.SetActive(true);
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
             
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             print("buton2");
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(4);
             
         }
 

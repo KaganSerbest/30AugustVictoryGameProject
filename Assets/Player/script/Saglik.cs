@@ -57,7 +57,7 @@ public class Saglik : MonoBehaviour
 
         if(distanceKapi <= 3 && Input.GetKeyDown(KeyCode.Y))
         { 
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
         }
 
         if (distanceKasa <= 4 && kasasayac == 1)
