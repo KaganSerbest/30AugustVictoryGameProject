@@ -32,6 +32,7 @@ public class PlayerControl : MonoBehaviour
     public float speed = 2f;
     private bool bol=true;
     public string talim4;
+    
 
     void Start()
     {
@@ -52,6 +53,8 @@ public class PlayerControl : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        
+        
     }
 
     void FixedUpdate()

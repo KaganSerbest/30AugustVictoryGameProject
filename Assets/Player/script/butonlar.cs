@@ -19,5 +19,10 @@ public class butonlar : MonoBehaviour
         print("buton2");
         SceneManager.LoadScene(5);
     }
+
+    public void OnEndEditText(string metinseldeger)
+    {
+        print(metinseldeger);
+    }
     
 }
