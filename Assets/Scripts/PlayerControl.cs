@@ -38,5 +38,7 @@ public class PlayerControl : MonoBehaviour
             animator.SetBool("isWalkingToR", false);
 
         
+
+
     }
 }
