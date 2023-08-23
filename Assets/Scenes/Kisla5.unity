@@ -941,7 +941,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 73c67e59986525b4bba2c6b3c1fdec26, type: 3}
       propertyPath: m_RootOrder
-      value: 156
+      value: 155
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73c67e59986525b4bba2c6b3c1fdec26, type: 3}
       propertyPath: m_LocalScale.x
@@ -2328,7 +2328,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Evet biliyorum.
+  m_text: Biliyorsan 1'e bas.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3011,19 +3011,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 484460757}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 521778116}
-        m_TargetAssemblyTypeName: butonlar, Assembly-CSharp
-        m_MethodName: biliyorumButonu
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &484460757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3204,52 +3192,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4dff5d3e8d14e064cbfc2886d824144e, type: 3}
---- !u!1 &521778115
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 521778117}
-  - component: {fileID: 521778116}
-  m_Layer: 0
-  m_Name: Kodlar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &521778116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521778115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 466b9760900065b41898bf701840552d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yeniGorev: {fileID: 596968865}
-  uyku: {fileID: 1440359985}
---- !u!4 &521778117
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521778115}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.660553, y: 7.5055256, z: 15.255791}
-  m_LocalScale: {x: 0.5, y: 4, z: 2}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 155
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &532361225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3673,7 +3615,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1898706888}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3861,7 +3804,7 @@ GameObject:
   - component: {fileID: 603789891}
   - component: {fileID: 603789890}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: textSifre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5783,13 +5726,15 @@ MonoBehaviour:
   noodle7: {fileID: 1012882632}
   noodle8: {fileID: 905853197}
   YeTusu: {fileID: 2003986289}
-  UyuTusu: {fileID: 310109165}
+  UyuTusu1: {fileID: 310109165}
   Uyku: {fileID: 1440359985}
-  textUyku: {fileID: 1722259047}
+  textSifre: {fileID: 603789888}
   buton1: {fileID: 484460754}
   buton2: {fileID: 1860529999}
   textUyan: {fileID: 1722259047}
+  image: {fileID: 112855425}
   Yatak: {fileID: 272850663}
+  yeniGorev: {fileID: 596968865}
 --- !u!1001 &983263596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8191,7 +8136,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Hay\u0131r bilmiyorum."
+  m_text: Bilmiyorsan 2'ye bas.s
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9214,19 +9159,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 73c67e59986525b4bba2c6b3c1fdec26, type: 3}
   m_PrefabInstance: {fileID: 158569360}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1564219545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1564219544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b832819f47807a547bad4620550c47c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  click: {fileID: 1690930600}
 --- !u!114 &1564219546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9240,7 +9172,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1564219547}
+  targe1: {fileID: 0}
+  targe2: {fileID: 0}
+  targe3: {fileID: 0}
+  targe4: {fileID: 0}
+  targe5: {fileID: 0}
   cam: {fileID: 0}
+  gun: {fileID: 0}
+  raw: {fileID: 0}
+  target1: {fileID: 0}
+  target2: {fileID: 0}
+  target3: {fileID: 0}
+  target4: {fileID: 0}
+  target5: {fileID: 0}
 --- !u!95 &1564219547
 Animator:
   serializedVersion: 5
@@ -9267,34 +9211,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 73c67e59986525b4bba2c6b3c1fdec26, type: 3}
   m_PrefabInstance: {fileID: 158569360}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1564219549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1564219544}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a425cd5c3c0c834f895444cfc99e52c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1564219544}
-  noodle1: {fileID: 0}
-  noodle2: {fileID: 0}
-  noodle3: {fileID: 0}
-  noodle4: {fileID: 0}
-  noodle6: {fileID: 0}
-  noodle7: {fileID: 0}
-  noodle8: {fileID: 0}
-  YeTusu: {fileID: 0}
-  UyuTusu: {fileID: 0}
-  Uyku: {fileID: 0}
-  textUyku: {fileID: 0}
-  buton1: {fileID: 0}
-  buton2: {fileID: 0}
-  textUyan: {fileID: 0}
-  Yatak: {fileID: 0}
 --- !u!54 &1564219551
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10292,7 +10208,7 @@ GameObject:
   - component: {fileID: 1722259050}
   - component: {fileID: 1722259049}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: textUyan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10339,7 +10255,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "UYUYAKALDIN ASKER!!!!\nHEMEN UYANMAN LAZIM!!!\nUYANMAK \u0130\xC7\u0130N
-    \"ENTER\" TU\u015EUNA BAS.\n\xC7ABUK OL!!!"
+    \"U\" TU\u015EUNA BAS.\n\xC7ABUK OL!!!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11283,19 +11199,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1860530002}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 521778116}
-        m_TargetAssemblyTypeName: butonlar, Assembly-CSharp
-        m_MethodName: bilmiyorumButonu
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1860530002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11448,6 +11352,82 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 851d0f0dc9bfed24cbd855892b5ce04d, type: 3}
+--- !u!1 &1898706887
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1898706888}
+  - component: {fileID: 1898706890}
+  - component: {fileID: 1898706889}
+  m_Layer: 0
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1898706888
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898706887}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 596968869}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2.4948, y: 4.9895}
+  m_SizeDelta: {x: 504.1581, y: 329.5219}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1898706889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898706887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6981132, g: 0.16794232, b: 0.16794232, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1898706890
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898706887}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1904672810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13039,7 +13019,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 157
+  m_RootOrder: 156
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2124926629
 PrefabInstance:

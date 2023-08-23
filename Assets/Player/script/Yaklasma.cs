@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Yaklasma : MonoBehaviour
 {
@@ -13,14 +14,18 @@ public class Yaklasma : MonoBehaviour
     public GameObject noodle7;
     public GameObject noodle8;
     public GameObject YeTusu;
-    public GameObject UyuTusu;
+    public GameObject UyuTusu1;
     public GameObject Uyku;
-    public GameObject textUyku;
+    public GameObject textSifre;
     public GameObject buton1;
     public GameObject buton2;
     public GameObject textUyan;
+    public GameObject image;
     public GameObject Yatak;
+    public GameObject yeniGorev;
     float noodleSayaci = 0;
+    float uyusayaci = 1;
+    float uykusayaci = 1;
 
     
 
@@ -91,26 +96,52 @@ public class Yaklasma : MonoBehaviour
 
         }
 
-        if(noodleSayaci == 7)
+        if(noodleSayaci == 1 && uyusayaci == 1)
         {
             YeTusu.SetActive(false);
-            UyuTusu.SetActive(true);
+            UyuTusu1.SetActive(true);
+            
         }
 
         float yatakMesafe = Vector3.Distance(player.transform.position, Yatak.transform.position);
         if (yatakMesafe <= 4 && Input.GetKeyDown(KeyCode.Space))
         {
-            UyuTusu.SetActive(false);
+            uyusayaci = 0;
             Uyku.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.KeypadEnter))
-            {
-                textUyan.SetActive(false);
-                textUyku.SetActive(true);
-                buton1.SetActive(true);
-                buton2.SetActive(true);
-            }
-
+            UyuTusu1.SetActive(false);
+            
         }
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+
+            print("çalýþtý");
+            textUyan.SetActive(false);
+            textSifre.SetActive(true);
+            buton1.SetActive(true);
+            buton2.SetActive(true);
+            print("çalýtý1");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            print("Buton1");
+            Uyku.SetActive(false);
+            yeniGorev.SetActive(true);
+            SceneManager.LoadScene(1);
+            
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            print("buton2");
+            SceneManager.LoadScene(5);
+        }
+
+
+
+
+
+
+
 
 
 
