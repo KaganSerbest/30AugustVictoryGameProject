@@ -27,8 +27,9 @@ public class PlayerControl : MonoBehaviour
     public GameObject txtsandik;
     public GameObject txtkasa;
     public GameObject sandik;
+    public GameObject panel;
     public float speed = 2f;
-    private bool bol;
+    private bool bol=true;
 
     void Start()
     {
@@ -60,6 +61,14 @@ public class PlayerControl : MonoBehaviour
         {
             txtkasa.SetActive(false);
             txtsandik.SetActive(true);
+            if (Input.GetKey(KeyCode.E))
+            {
+                bol = false;
+                txtkasa.SetActive(false);
+                panel.SetActive(true);
+            }
+            else
+                panel.SetActive(false);
         }
         else
         {
@@ -95,13 +104,11 @@ public class PlayerControl : MonoBehaviour
         {
             txtgun.SetActive(false);
             sandik.SetActive(true);
-            bol = false;
         }
-        if (bol && targe1.GetBool("isDie") && targe2.GetBool("isDie") && targe3.GetBool("isDie") && targe4.GetBool("isDie") && targe5.GetBool("isDie"))
-        {
-
-            txtkasa.SetActive(true);
-            bol = false;
+        if (!txtsandik.active && targe1.GetBool("isDie") && targe2.GetBool("isDie") && targe3.GetBool("isDie") && targe4.GetBool("isDie") && targe5.GetBool("isDie"))
+        {   
+            if(bol)
+                txtkasa.SetActive(true);
         }
         if (Input.GetMouseButtonDown(0)&& animator.GetBool("isHolding"))
         {
