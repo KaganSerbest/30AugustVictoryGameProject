@@ -98,7 +98,7 @@ public class PlayerControl : MonoBehaviour
 
 
         float distance = Vector3.Distance(gun.transform.position, transform.position);
-        if (distance <= 1.5)
+        if (distance <= 3)
         {
 
             if (Input.GetKey(KeyCode.E))
