@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Hangar2 : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class Hangar2 : MonoBehaviour
     public GameObject playerk;
     public GameObject panel;
     public GameObject sifre;
+    public GameObject hangarKapisi;
+    public GameObject hangarCikisYazisi;
 
 
 
@@ -111,9 +114,23 @@ public class Hangar2 : MonoBehaviour
         else
             txtruck.SetActive(false);
 
+        float hangarMesafe = Vector3.Distance(transform.position, hangarKapisi.transform.position);
+        if (hangarMesafe <= 20)
+        {
+            hangarCikisYazisi.SetActive(true);
+        }
+        else
+        {
+            hangarCikisYazisi.SetActive(false);
+        }
+        if (hangarMesafe <= 20 && Input.GetKeyDown(KeyCode.Y))
+        {
+            SceneManager.LoadScene(0);
+        }
 
-        
-        
+
+
+
 
         float varilmesafe = Vector3.Distance(varil.transform.position, transform.position);
         if (varilmesafe <= 3)

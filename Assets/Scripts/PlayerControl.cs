@@ -29,6 +29,10 @@ public class PlayerControl : MonoBehaviour
     public GameObject txtkasa;
     public GameObject sandik;
     public GameObject panel;
+    public GameObject cikisKapisi;
+    public GameObject cikisYazisi;
+    public GameObject hangarKapisi;
+    public GameObject hangarCikisYazisi;
     public float speed = 2f;
     private bool bol=true;
     
@@ -199,7 +203,22 @@ public class PlayerControl : MonoBehaviour
 
 
         }
-}
+        float cikisMesafe = Vector3.Distance(transform.position, cikisKapisi.transform.position);
+        if(cikisMesafe <= 5)
+        {
+            cikisYazisi.SetActive(true);
+        }
+        else
+        {
+            cikisYazisi.SetActive(false);
+        }
+        if(cikisMesafe <= 5 && Input.GetKeyDown(KeyCode.Y))
+        {
+            SceneManager.LoadScene(0);
+        }
+
+        
+    }
 
     
 }
