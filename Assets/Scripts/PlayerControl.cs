@@ -31,14 +31,16 @@ public class PlayerControl : MonoBehaviour
     public GameObject panel;
     public float speed = 2f;
     private bool bol=true;
-    public string talim4;
+    
     
 
     void Start()
     {
+        Scene currentScene = SceneManager.GetActiveScene();
+    string currentSceneName = currentScene.name;
         animator = GetComponent<Animator>();
-        Scene targetScene = SceneManager.GetSceneByName(talim4);
-        if (targetScene.isLoaded)
+
+        if (currentSceneName == "Talim4")
         {
             targe1 = target1.GetComponent<Animator>();
             targe2 = target2.GetComponent<Animator>();
@@ -49,6 +51,8 @@ public class PlayerControl : MonoBehaviour
         
 
     }
+ 
+    
     private void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -59,11 +63,12 @@ public class PlayerControl : MonoBehaviour
 
     void FixedUpdate()
     {
-        Scene targetScene = SceneManager.GetSceneByName(talim4);
-        if (targetScene.isLoaded)
+        Scene currentScene = SceneManager.GetActiveScene();
+        string currentSceneName = currentScene.name;
+        if (currentSceneName == "Talim4")
         {
             float text = Vector3.Distance(talim.transform.position, transform.position);
-            if (text <= 6)
+            if (text <= 6 && !sandik.active)
             {
                 txt.SetActive(true);
             }
@@ -117,7 +122,7 @@ public class PlayerControl : MonoBehaviour
             animator.SetBool("isWalkingBack", false);
 
 
-        if (targetScene.isLoaded)
+        if (currentSceneName == "Talim4")
         {
             if (targe1.GetBool("isDie") && targe2.GetBool("isDie") && targe3.GetBool("isDie") && targe4.GetBool("isDie") && targe5.GetBool("isDie"))
             {

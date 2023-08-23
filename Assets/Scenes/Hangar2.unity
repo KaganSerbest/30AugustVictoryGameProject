@@ -3065,7 +3065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6776533254597217144, guid: de45486950b6dca4bb767d1f78bd7a6a, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6776533254597217144, guid: de45486950b6dca4bb767d1f78bd7a6a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11404,7 +11404,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ce960df2b5c20074d8e71e984861b1c1, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce960df2b5c20074d8e71e984861b1c1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12126,7 +12126,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Alirken E yi
 
-    Yerlestirirken R yi
+    Birakirken R yi
 
     kullanabilirsin'
   m_isRightToLeft: 0
@@ -15806,7 +15806,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ce960df2b5c20074d8e71e984861b1c1, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce960df2b5c20074d8e71e984861b1c1, type: 3}
       propertyPath: m_LocalPosition.x
