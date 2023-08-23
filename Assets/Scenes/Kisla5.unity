@@ -7988,7 +7988,7 @@ MonoBehaviour:
   txtkasa: {fileID: 0}
   sandik: {fileID: 0}
   panel: {fileID: 0}
-  speed: 2
+  speed: 4
   talim4: 
 --- !u!95 &1564219547
 Animator:
