@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerControl : MonoBehaviour
@@ -30,15 +31,22 @@ public class PlayerControl : MonoBehaviour
     public GameObject panel;
     public float speed = 2f;
     private bool bol=true;
+    public string talim4;
 
     void Start()
     {
         animator = GetComponent<Animator>();
-        targe1 = target1.GetComponent<Animator>();
-        targe2 = target2.GetComponent<Animator>();
-        targe3 = target3.GetComponent<Animator>();
-        targe4 = target4.GetComponent<Animator>();
-        targe5 = target5.GetComponent<Animator>();
+        Scene targetScene = SceneManager.GetSceneByName(talim4);
+        if (targetScene.isLoaded)
+        {
+            targe1 = target1.GetComponent<Animator>();
+            targe2 = target2.GetComponent<Animator>();
+            targe3 = target3.GetComponent<Animator>();
+            targe4 = target4.GetComponent<Animator>();
+            targe5 = target5.GetComponent<Animator>();
+        }
+        
+
     }
     private void Awake()
     {
@@ -48,33 +56,38 @@ public class PlayerControl : MonoBehaviour
 
     void FixedUpdate()
     {
-        float text = Vector3.Distance(talim.transform.position, transform.position);
-        if (text <= 6) {
-            txt.SetActive(true);
-        }
-        else {
-            txt.SetActive(false);
-        }
-
-        float mesafesandik = Vector3.Distance(sandik.transform.position, transform.position);
-        if (mesafesandik <= 3 && sandik.active)
+        Scene targetScene = SceneManager.GetSceneByName(talim4);
+        if (targetScene.isLoaded)
         {
-            txtkasa.SetActive(false);
-            txtsandik.SetActive(true);
-            if (Input.GetKey(KeyCode.E))
+            float text = Vector3.Distance(talim.transform.position, transform.position);
+            if (text <= 6)
             {
-                bol = false;
-                txtkasa.SetActive(false);
-                panel.SetActive(true);
+                txt.SetActive(true);
             }
             else
-                panel.SetActive(false);
-        }
-        else
-        {
-            txtsandik.SetActive(false);
-        }
+            {
+                txt.SetActive(false);
+            }
 
+            float mesafesandik = Vector3.Distance(sandik.transform.position, transform.position);
+            if (mesafesandik <= 3 && sandik.active)
+            {
+                txtkasa.SetActive(false);
+                txtsandik.SetActive(true);
+                if (Input.GetKey(KeyCode.E))
+                {
+                    bol = false;
+                    txtkasa.SetActive(false);
+                    panel.SetActive(true);
+                }
+                else
+                    panel.SetActive(false);
+            }
+            else
+            {
+                txtsandik.SetActive(false);
+            }
+        }
 
         if (Input.GetKey(KeyCode.W))
         {
@@ -87,7 +100,7 @@ public class PlayerControl : MonoBehaviour
         if (animator.GetBool("isWalking") && Input.GetKey(KeyCode.LeftControl))
         {
             animator.SetBool("isWalkingToR", true);
-            transform.Translate(new Vector3(0, 0, speed*2) * Time.deltaTime);
+            transform.Translate(new Vector3(0, 0, speed * 2) * Time.deltaTime);
         }
         else
             animator.SetBool("isWalkingToR", false);
@@ -100,82 +113,85 @@ public class PlayerControl : MonoBehaviour
         else
             animator.SetBool("isWalkingBack", false);
 
-        if(targe1.GetBool("isDie")&& targe2.GetBool("isDie") && targe3.GetBool("isDie") && targe4.GetBool("isDie") && targe5.GetBool("isDie") )
-        {
-            txtgun.SetActive(false);
-            sandik.SetActive(true);
-        }
-        if (!txtsandik.active && targe1.GetBool("isDie") && targe2.GetBool("isDie") && targe3.GetBool("isDie") && targe4.GetBool("isDie") && targe5.GetBool("isDie"))
-        {   
-            if(bol)
-                txtkasa.SetActive(true);
-        }
-        if (Input.GetMouseButtonDown(0)&& animator.GetBool("isHolding"))
-        {
-            animator.SetBool("isFire", true);
-            RaycastHit hit;
-            if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, Mathf.Infinity))
-            {
-                GameObject hitObject = hit.collider.gameObject;
-                if (hitObject.name.Equals("target1"))
-                {
-                    targe1.SetBool("isDie", true);
-                }
-                if (hitObject.name.Equals("target2"))
-                {
-                    targe2.SetBool("isDie", true);
-                }
-                if (hitObject.name.Equals("target3"))
-                {
-                    targe3.SetBool("isDie", true);
-                }
-                if (hitObject.name.Equals("target4"))
-                {
-                    targe4.SetBool("isDie", true);
-                }  
-                if (hitObject.name.Equals("target5"))
-                {
-                    targe5.SetBool("isDie", true);
-                }
-                
 
-                Debug.Log("Isabet edilen nesne: " + hitObject.name);
+        if (targetScene.isLoaded)
+        {
+            if (targe1.GetBool("isDie") && targe2.GetBool("isDie") && targe3.GetBool("isDie") && targe4.GetBool("isDie") && targe5.GetBool("isDie"))
+            {
+                txtgun.SetActive(false);
+                sandik.SetActive(true);
             }
-        }
-        else
-            animator.SetBool("isFire", false);
-
-        
-
-        float distance = Vector3.Distance(gun.transform.position, transform.position);
-        if (distance <= 3 && !sandik.active)
-        {
-            txtgun.SetActive(true);
-
-            if (Input.GetKey(KeyCode.E))
+            if (!txtsandik.active && targe1.GetBool("isDie") && targe2.GetBool("isDie") && targe3.GetBool("isDie") && targe4.GetBool("isDie") && targe5.GetBool("isDie"))
             {
-                raw.SetActive(true);
-                print(gameObject.name);
-                animator.SetBool("isHolding", true);
-                
+                if (bol)
+                    txtkasa.SetActive(true);
+            }
+            if (Input.GetMouseButtonDown(0) && animator.GetBool("isHolding"))
+            {
+                animator.SetBool("isFire", true);
+                RaycastHit hit;
+                if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, Mathf.Infinity))
+                {
+                    GameObject hitObject = hit.collider.gameObject;
+                    if (hitObject.name.Equals("target1"))
+                    {
+                        targe1.SetBool("isDie", true);
+                    }
+                    if (hitObject.name.Equals("target2"))
+                    {
+                        targe2.SetBool("isDie", true);
+                    }
+                    if (hitObject.name.Equals("target3"))
+                    {
+                        targe3.SetBool("isDie", true);
+                    }
+                    if (hitObject.name.Equals("target4"))
+                    {
+                        targe4.SetBool("isDie", true);
+                    }
+                    if (hitObject.name.Equals("target5"))
+                    {
+                        targe5.SetBool("isDie", true);
+                    }
+
+
+                    Debug.Log("Isabet edilen nesne: " + hitObject.name);
+                }
+            }
+            else
+                animator.SetBool("isFire", false);
+
+
+
+            float distance = Vector3.Distance(gun.transform.position, transform.position);
+            if (distance <= 3 && !sandik.active)
+            {
+                txtgun.SetActive(true);
+
+                if (Input.GetKey(KeyCode.E))
+                {
+                    raw.SetActive(true);
+                    print(gameObject.name);
+                    animator.SetBool("isHolding", true);
+
+                }
+                else
+                {
+                    animator.SetBool("isHolding", false);
+                    raw.SetActive(false);
+
+                }
             }
             else
             {
                 animator.SetBool("isHolding", false);
+                txtgun.SetActive(false);
                 raw.SetActive(false);
-                
             }
-        }
-        else
-        {
-            animator.SetBool("isHolding", false);
-            txtgun.SetActive(false);
-            raw.SetActive(false);
-        }
-            
+
 
         }
+}
 
-        
-
+    
 }
