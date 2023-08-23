@@ -27,7 +27,8 @@ public class anaSahne : MonoBehaviour
     public GameObject kapidanGirkisla;
     public GameObject kapidanGirsaglik;
     public GameObject kapidanGirtalim;
-    public GameObject anagiris;
+
+
     private string anaSifre = "";
     void Start()
     {
@@ -42,11 +43,7 @@ public class anaSahne : MonoBehaviour
         float mesafeSaglik = Vector3.Distance(oyuncu.transform.position, saglikLevha.transform.position);
         float mesafeOfis = Vector3.Distance(oyuncu.transform.position, ofisLevha.transform.position);
         float mesafeKisla = Vector3.Distance(oyuncu.transform.position, kislaLevha.transform.position);
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            anagiris.SetActive(false);
-        }
+ 
 
         if (mesafeHangar <= 10)
         {
@@ -91,22 +88,22 @@ public class anaSahne : MonoBehaviour
 
         if (mesafeHangar <= 10 && Input.GetKeyDown(KeyCode.Y))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
 
         if (mesafeTalim <= 10 && Input.GetKeyDown(KeyCode.Y))
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(4);
         }
 
         if (mesafeSaglik <= 10 && Input.GetKeyDown(KeyCode.Y))
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
 
         if (mesafeKisla <= 10 && Input.GetKeyDown(KeyCode.Y))
         {
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(5);
         }
 
         if (mesafeOfis <= 30 && Input.GetKeyDown(KeyCode.Y))
@@ -192,7 +189,7 @@ public class anaSahne : MonoBehaviour
 
         if (anaSifre == "1071")
         {
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(6);
         }
 
 

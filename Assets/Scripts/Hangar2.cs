@@ -125,7 +125,7 @@ public class Hangar2 : MonoBehaviour
         }
         if (hangarMesafe <= 20 && Input.GetKeyDown(KeyCode.Y))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
 
 

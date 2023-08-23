@@ -41,7 +41,7 @@ public class Yaklasma : MonoBehaviour
         float mesafeKapi = Vector3.Distance(player.transform.position, kapi.transform.position);
         if (mesafeKapi <= 10 && Input.GetKeyDown(KeyCode.Y))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
         float distance1 = Vector3.Distance(player.transform.position, noodle1.transform.position);
         if (distance1 <= 7 && Input.GetKeyDown(KeyCode.E))
@@ -131,14 +131,14 @@ public class Yaklasma : MonoBehaviour
         {
             print("Buton1");
             Uyku.SetActive(false);
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
             
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             print("buton2");
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(5);
             
         }
 
