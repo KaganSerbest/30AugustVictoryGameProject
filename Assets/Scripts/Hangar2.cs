@@ -124,21 +124,21 @@ public class Hangar2 : MonoBehaviour
                 playerv.SetActive(!playerv.active);
 
             } 
-            else if (Input.GetKeyDown(KeyCode.E) && playerv.active)
+            else if (Input.GetKeyDown(KeyCode.R) && playerv.active)
             {
                 playerv.SetActive(!playerv.active);
             }
         }
 
         float kutumesafe = Vector3.Distance(kutular.transform.position, transform.position);
-        if (kutumesafe <= 4)
+        if (kutumesafe <= 5)
         {
             
             if (Input.GetKeyDown(KeyCode.E) && !playerv.active && !playerk.active && gorev.active)
             {
                 playerk.SetActive(!playerk.active);
             }
-            else if (Input.GetKeyDown(KeyCode.E) && playerk.active)
+            else if (Input.GetKeyDown(KeyCode.R) && playerk.active)
             {
                 playerk.SetActive(!playerk.active);
             }
