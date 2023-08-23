@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 32ea4fce7231ca349a48b944302d257e, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: df61d4331f9595847aba59f8285d18b0, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.009146841, g: 0.015869204, b: 0.034160383, a: 1}
+  m_IndirectSpecularColor: {r: 0.18130621, g: 0.19276744, b: 0.20392655, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2188,7 +2188,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -30.7, y: 110.8}
+  m_AnchoredPosition: {x: -30.7, y: 119}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &205185840
@@ -2211,8 +2211,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Merhaba Asker yardim ettigin icin tesekkur ederim. Bir sifreye ihtiyacin
-    varmis. '
+  m_text: "Merhaba Asker yardim ettigin icin tesekkur ederim. \nIhtiyacin olan sayi
+    : 1"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2239,8 +2239,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 40.8
+  m_fontSizeBase: 40.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2275,7 +2275,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -198.07465, w: -159.56012}
+  m_margin: {x: 0, y: 0, z: -198.07465, w: -231.46289}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4398,7 +4398,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: can
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3208736925240985333, guid: c9bc0684bb66134498398bd46a379793, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c9bc0684bb66134498398bd46a379793, type: 3}
 --- !u!1 &400940046 stripped
 GameObject:
@@ -4473,7 +4474,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: wash (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7303725579952198435, guid: 3226449d28aed3145bc15e385f2bcc81, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3226449d28aed3145bc15e385f2bcc81, type: 3}
 --- !u!1 &429267884 stripped
 GameObject:
@@ -5418,7 +5420,7 @@ MonoBehaviour:
   cikisYazisi: {fileID: 0}
   hangarKapisi: {fileID: 0}
   hangarCikisYazisi: {fileID: 0}
-  speed: 4
+  speed: 3
 --- !u!95 &617276681
 Animator:
   serializedVersion: 5
@@ -6219,7 +6221,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: can (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3208736925240985333, guid: c9bc0684bb66134498398bd46a379793, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c9bc0684bb66134498398bd46a379793, type: 3}
 --- !u!1 &714303893 stripped
 GameObject:
@@ -6944,7 +6947,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: wash
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7303725579952198435, guid: 3226449d28aed3145bc15e385f2bcc81, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3226449d28aed3145bc15e385f2bcc81, type: 3}
 --- !u!1 &768928905 stripped
 GameObject:
@@ -9483,7 +9487,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: can (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3208736925240985333, guid: c9bc0684bb66134498398bd46a379793, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c9bc0684bb66134498398bd46a379793, type: 3}
 --- !u!1 &1074311132 stripped
 GameObject:
@@ -10503,7 +10508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73c67e59986525b4bba2c6b3c1fdec26, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -35.14
+      value: -13.67
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73c67e59986525b4bba2c6b3c1fdec26, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10511,23 +10516,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73c67e59986525b4bba2c6b3c1fdec26, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 31.875
+      value: 43.66
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73c67e59986525b4bba2c6b3c1fdec26, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73c67e59986525b4bba2c6b3c1fdec26, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73c67e59986525b4bba2c6b3c1fdec26, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73c67e59986525b4bba2c6b3c1fdec26, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73c67e59986525b4bba2c6b3c1fdec26, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10535,7 +10540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73c67e59986525b4bba2c6b3c1fdec26, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73c67e59986525b4bba2c6b3c1fdec26, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -10606,7 +10611,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: can (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3208736925240985333, guid: c9bc0684bb66134498398bd46a379793, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c9bc0684bb66134498398bd46a379793, type: 3}
 --- !u!1 &1181760226 stripped
 GameObject:
@@ -11427,7 +11433,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: wash (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7303725579952198435, guid: 3226449d28aed3145bc15e385f2bcc81, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3226449d28aed3145bc15e385f2bcc81, type: 3}
 --- !u!1 &1277479600 stripped
 GameObject:
@@ -12212,7 +12219,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: oil (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8221721200721988307, guid: d2a69bbb96e8d5f4fb1a0fbc4bdfb185, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d2a69bbb96e8d5f4fb1a0fbc4bdfb185, type: 3}
 --- !u!1 &1371907747 stripped
 GameObject:
@@ -13027,7 +13035,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: can (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3208736925240985333, guid: c9bc0684bb66134498398bd46a379793, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c9bc0684bb66134498398bd46a379793, type: 3}
 --- !u!1 &1453274452 stripped
 GameObject:
@@ -14170,6 +14179,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.7786088, y: 1.0116367, z: 0.82229996}
   m_Center: {x: 0.13282412, y: 0.50581837, z: -0.020033821}
+--- !u!1 &1629361699 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5303340979319473485, guid: d2a69bbb96e8d5f4fb1a0fbc4bdfb185, type: 3}
+  m_PrefabInstance: {fileID: 1793695829}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1629361705
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629361699}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.42108274, y: 0.64734954, z: 0.42108276}
+  m_Center: {x: -0.0025831386, y: 0.2959083, z: 0.013118863}
 --- !u!1 &1641198384
 GameObject:
   m_ObjectHideFlags: 0
@@ -15008,7 +15035,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: can (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3208736925240985333, guid: c9bc0684bb66134498398bd46a379793, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c9bc0684bb66134498398bd46a379793, type: 3}
 --- !u!1 &1768603443 stripped
 GameObject:
@@ -15234,7 +15262,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: oil
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8221721200721988307, guid: d2a69bbb96e8d5f4fb1a0fbc4bdfb185, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d2a69bbb96e8d5f4fb1a0fbc4bdfb185, type: 3}
 --- !u!1 &1850463248
 GameObject:

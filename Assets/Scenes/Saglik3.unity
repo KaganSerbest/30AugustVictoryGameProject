@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731715, g: 0.13414735, b: 0.121078536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3342,6 +3342,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4055357255902539062, guid: 8e1dee51ea9c29a43b10d8c0d4ac5a64, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 645f315f256955f49b38a210e25c910c, type: 2}
+    - target: {fileID: 5834403250881918317, guid: 8e1dee51ea9c29a43b10d8c0d4ac5a64, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 645f315f256955f49b38a210e25c910c, type: 2}
@@ -15353,7 +15357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73c67e59986525b4bba2c6b3c1fdec26, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.12
+      value: 26.83
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73c67e59986525b4bba2c6b3c1fdec26, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15361,7 +15365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73c67e59986525b4bba2c6b3c1fdec26, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.7
+      value: -19.17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73c67e59986525b4bba2c6b3c1fdec26, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15444,8 +15448,11 @@ MonoBehaviour:
   txtkasa: {fileID: 0}
   sandik: {fileID: 0}
   panel: {fileID: 0}
+  cikisKapisi: {fileID: 0}
+  cikisYazisi: {fileID: 0}
+  hangarKapisi: {fileID: 0}
+  hangarCikisYazisi: {fileID: 0}
   speed: 2
-  talim4: 
 --- !u!95 &1555037449
 Animator:
   serializedVersion: 5

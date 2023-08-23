@@ -203,20 +203,22 @@ public class PlayerControl : MonoBehaviour
 
 
         }
-        float cikisMesafe = Vector3.Distance(transform.position, cikisKapisi.transform.position);
-        if(cikisMesafe <= 5)
+        if (currentSceneName == "Talim4")
         {
-            cikisYazisi.SetActive(true);
+            float cikisMesafe = Vector3.Distance(transform.position, cikisKapisi.transform.position);
+            if (cikisMesafe <= 5)
+            {
+                cikisYazisi.SetActive(true);
+            }
+            else
+            {
+                cikisYazisi.SetActive(false);
+            }
+            if (cikisMesafe <= 5 && Input.GetKeyDown(KeyCode.Y))
+            {
+                SceneManager.LoadScene(0);
+            }
         }
-        else
-        {
-            cikisYazisi.SetActive(false);
-        }
-        if(cikisMesafe <= 5 && Input.GetKeyDown(KeyCode.Y))
-        {
-            SceneManager.LoadScene(0);
-        }
-
         
     }
 
