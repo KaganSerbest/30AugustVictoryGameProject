@@ -5556,7 +5556,9 @@ MonoBehaviour:
   txtsandik: {fileID: 0}
   txtkasa: {fileID: 0}
   sandik: {fileID: 0}
+  panel: {fileID: 0}
   speed: 2
+  talim4: 
 --- !u!95 &1439779958
 Animator:
   serializedVersion: 5

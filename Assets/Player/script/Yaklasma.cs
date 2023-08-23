@@ -134,6 +134,7 @@ public class Yaklasma : MonoBehaviour
         {
             print("buton2");
             SceneManager.LoadScene(5);
+            
         }
 
 
