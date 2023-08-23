@@ -10,11 +10,13 @@ public class butonlar : MonoBehaviour
     public GameObject uyku;
     public void biliyorumButonu()
     {
+        print("Buton1");
         uyku.SetActive(false);
         yeniGorev.SetActive(true);
     }
     public void bilmiyorumButonu()
     {
+        print("buton2");
         SceneManager.LoadScene(5);
     }
     
