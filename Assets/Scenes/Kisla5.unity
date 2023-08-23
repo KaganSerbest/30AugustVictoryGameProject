@@ -7422,7 +7422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1440359986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8172,6 +8172,10 @@ MonoBehaviour:
   txtkasa: {fileID: 0}
   sandik: {fileID: 0}
   panel: {fileID: 0}
+  cikisKapisi: {fileID: 0}
+  cikisYazisi: {fileID: 0}
+  hangarKapisi: {fileID: 0}
+  hangarCikisYazisi: {fileID: 0}
   speed: 4
 --- !u!95 &1564219547
 Animator:
@@ -10612,7 +10616,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2003986290
 MonoBehaviour:
   m_ObjectHideFlags: 0

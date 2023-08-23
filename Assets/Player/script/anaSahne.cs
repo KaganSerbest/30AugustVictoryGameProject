@@ -27,6 +27,7 @@ public class anaSahne : MonoBehaviour
     public GameObject kapidanGirkisla;
     public GameObject kapidanGirsaglik;
     public GameObject kapidanGirtalim;
+    public GameObject anagiris;
     private string anaSifre = "";
     void Start()
     {
@@ -41,6 +42,11 @@ public class anaSahne : MonoBehaviour
         float mesafeSaglik = Vector3.Distance(oyuncu.transform.position, saglikLevha.transform.position);
         float mesafeOfis = Vector3.Distance(oyuncu.transform.position, ofisLevha.transform.position);
         float mesafeKisla = Vector3.Distance(oyuncu.transform.position, kislaLevha.transform.position);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            anagiris.SetActive(false);
+        }
 
         if (mesafeHangar <= 10)
         {
@@ -103,7 +109,7 @@ public class anaSahne : MonoBehaviour
             SceneManager.LoadScene(4);
         }
 
-        if (mesafeOfis <= 10 && Input.GetKeyDown(KeyCode.Y))
+        if (mesafeOfis <= 30 && Input.GetKeyDown(KeyCode.Y))
         {
             sifreYanlisUyarisi.SetActive(true);
         }
