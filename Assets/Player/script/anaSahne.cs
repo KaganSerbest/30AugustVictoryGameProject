@@ -22,6 +22,11 @@ public class anaSahne : MonoBehaviour
     public GameObject sifre8;
     public GameObject sifre9;
     public GameObject sifre0;
+    public GameObject kapidanGirofis;
+    public GameObject kapidanGirhangar;
+    public GameObject kapidanGirkisla;
+    public GameObject kapidanGirsaglik;
+    public GameObject kapidanGirtalim;
     private string anaSifre = "";
     void Start()
     {
@@ -37,7 +42,48 @@ public class anaSahne : MonoBehaviour
         float mesafeOfis = Vector3.Distance(oyuncu.transform.position, ofisLevha.transform.position);
         float mesafeKisla = Vector3.Distance(oyuncu.transform.position, kislaLevha.transform.position);
 
-        if(mesafeHangar <= 10 && Input.GetKeyDown(KeyCode.Y))
+        if (mesafeHangar <= 10)
+        {
+            kapidanGirhangar.SetActive(true);
+        }
+        else
+        {
+            kapidanGirhangar.SetActive(false);
+        }
+        if (mesafeKisla <= 10)
+        {
+            kapidanGirkisla.SetActive(true);
+        }
+        else
+        {
+            kapidanGirkisla.SetActive(false);
+        }
+        if (mesafeSaglik <= 10)
+        {
+            kapidanGirsaglik.SetActive(true);
+        }
+        else
+        {
+            kapidanGirsaglik.SetActive(false);
+        }
+        if (mesafeOfis <= 10)
+        {
+            kapidanGirofis.SetActive(true);
+        }
+        else
+        {
+            kapidanGirofis.SetActive(false);
+        }
+        if (mesafeTalim <= 10)
+        {
+            kapidanGirtalim.SetActive(true);
+        }
+        else
+        {
+            kapidanGirtalim.SetActive(false);
+        }
+
+        if (mesafeHangar <= 10 && Input.GetKeyDown(KeyCode.Y))
         {
             SceneManager.LoadScene(1);
         }
