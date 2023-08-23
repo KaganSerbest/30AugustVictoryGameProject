@@ -26,8 +26,8 @@ public class camerafollow : MonoBehaviour
         float mouseY = Input.GetAxis("Mouse Y") * mouseSens * Time.deltaTime;
 
         player.Rotate(Vector3.up, mouseX);
-        xRotation = -mouseY;
-        xRotation = Mathf.Clamp(xRotation, -75, 75);
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -50f, 50f);
         transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
     }
 }
