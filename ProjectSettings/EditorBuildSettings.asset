@@ -4,5 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Hangar2.unity
+    guid: 97ef3d70b88f1084495531d4259109b7
+  - enabled: 1
+    path: Assets/Scenes/Saglik3.unity
+    guid: 248cc29ac88399b4296bf99d5edb69bb
+  - enabled: 1
+    path: Assets/Scenes/Talim4.unity
+    guid: 77fdc8398f69ef2479983f320b8b5974
+  - enabled: 1
+    path: Assets/Scenes/Kisla5.unity
+    guid: c3f3fb1367d7d1f4f9f8de7e9a5021b8
+  - enabled: 1
+    path: Assets/Scenes/Office.unity
+    guid: 16c65e79766a9af4fb31166fe8a7c226
   m_configObjects: {}
